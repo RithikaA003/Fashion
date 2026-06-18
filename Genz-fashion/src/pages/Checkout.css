@@ -1,0 +1,107 @@
+.checkout-container {
+  padding: 20px;
+  background: #121212;
+  color: white;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* LAYOUT */
+.checkout-layout {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* LEFT + RIGHT */
+.checkout-left,
+.checkout-right {
+  flex: 1;
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* SELECT */
+.select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* DIVIDER */
+.divider {
+  text-align: center;
+  margin: 10px 0;
+  color: #888;
+}
+
+/* INPUT */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: none;
+  background: #2a2a2a;
+  color: white;
+}
+
+textarea {
+  height: 80px;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+/* BUTTONS */
+.save-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background: #555;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.order-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #ff4081;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* PAYMENT */
+.payment-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* SUMMARY */
+.summary {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .checkout-layout {
+    flex-direction: column;
+  }
+}

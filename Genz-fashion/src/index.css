@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgb(52, 48, 48);
+  color: white;
+}
+
+.nav a {
+  color: white;
+  margin-left: 15px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* Mobile */
+@media (max-width:600px) {
+  h1 {
+    font-size: 20px;
+  }
+}
+

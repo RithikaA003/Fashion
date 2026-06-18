@@ -1,0 +1,135 @@
+.dashboard {
+  padding: 30px;
+  background: #f4f7fc;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.dashboard-header h1 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.dashboard-header p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+.dashboard-cards {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* SINGLE CARD */
+.dashboard-card {
+  padding: 25px;
+  border-radius: 18px;
+  color: white;
+  box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+/* CARD COLORS */
+.products {
+  background:
+    linear-gradient(
+      135deg,
+      #667eea,
+      #764ba2
+    );
+}
+
+.orders {
+  background:
+    linear-gradient(
+      135deg,
+      #ff758c,
+      #ff7eb3
+    );
+}
+
+.users {
+  background:
+    linear-gradient(
+      135deg,
+      #43cea2,
+      #185a9d
+    );
+}
+
+
+/* ICON */
+.card-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+/* CARD TEXT */
+.dashboard-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card h1 {
+  font-size: 36px;
+}
+
+/* BUTTON */
+.card-btn {
+  margin-top: 15px;
+  display: inline-block;
+  padding: 10px 18px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* QUICK ACTIONS */
+.quick-actions {
+  margin-top: 50px;
+}
+
+.quick-actions h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ACTION BUTTON */
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111827;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.action-btn:hover {
+  background: #2563eb;
+}

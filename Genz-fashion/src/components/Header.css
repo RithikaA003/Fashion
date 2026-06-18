@@ -1,0 +1,84 @@
+/* Header Container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: url('../assets/header/header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 50vh; /* 🔥 full responsive height */
+  width: 100%;
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+/* 🔥 Dark overlay for better text visibility */
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Keep content above overlay */
+.header * {
+  position: relative;
+}
+
+/* Text section */
+.words {
+  max-width: 600px;
+}
+
+.words h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.words h4 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Navigation */
+.nav-links a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ff4081;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    min-height: 60vh;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .words h3 {
+    font-size: 24px;
+  }
+
+  .words h4 {
+    font-size: 16px;
+  }
+}

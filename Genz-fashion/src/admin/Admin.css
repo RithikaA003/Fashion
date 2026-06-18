@@ -1,0 +1,150 @@
+/* Main Container */
+.admin-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #fff0f5, #fdfdfd);
+  font-family: Arial, sans-serif;
+}
+
+.admin-container h1 {
+  text-align: center;
+  color: #ff4081;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Form Section */
+.form-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  max-width: 550px;
+  margin: 0 auto 40px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-4px);
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-container input {
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.3s ease;
+  outline: none;
+}
+
+.form-container input:focus {
+  border-color: #ff4081;
+  box-shadow: 0 0 8px rgba(255, 64, 129, 0.2);
+}
+
+/* Form Button */
+.form-container button {
+  padding: 14px;
+  border: none;
+  background: linear-gradient(135deg, #ff4081, #ff6fa5);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.form-container button:hover {
+  background: linear-gradient(135deg, #e73370, #ff4081);
+  transform: scale(1.02);
+}
+
+/* Table Section */
+.table-container {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background: #ff4081;
+  color: white;
+  padding: 16px;
+  text-align: left;
+  font-size: 15px;
+}
+
+table td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+table tr:hover {
+  background: #fff5f8;
+  transition: 0.3s ease;
+}
+
+/* Action Buttons */
+table button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+/* Edit Button */
+.edit-btn {
+  background: #4caf50;
+}
+
+.edit-btn:hover {
+  background: #43a047;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: #f44336;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-container,
+  .table-container {
+    padding: 20px;
+  }
+
+  table th,
+  table td {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .admin-container h1 {
+    font-size: 28px;
+  }
+}
